@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes Turísticos | Urma – El Oro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Urma <span>– El Oro</span></h1>
+            <p data-i18n="subtitulo-paquetes">Paquetes turísticos pensados para ti</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" data-i18n="nav-inicio">Inicio</a></li>
+            <li><a href="problemas.html" data-i18n="nav-problemas">Problemas</a></li>
+            <li><a href="consejos.html" data-i18n="nav-consejos">Consejos</a></li>
+            <li><a href="cantones.html" data-i18n="nav-cantones">Cantones</a></li>
+            <li><a href="paquetes.html" class="activo" data-i18n="nav-paquetes">Paquetes</a></li>
+            <li class="idioma-switch">
+                <button class="btn-idioma activo" data-lang="es" onclick="cambiarIdioma('es')">ES</button>
+                <button class="btn-idioma" data-lang="en" onclick="cambiarIdioma('en')">EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+
+        <section>
+            <h2 data-i18n="paquetes-titulo">Nuestros Paquetes Turísticos</h2>
+            <p class="intro" data-i18n="paquetes-intro">
+                Elige el plan que mejor se adapte a tus intereses: cultura, aventura o naturaleza. 
+                Todos incluyen orientación sobre seguridad y recomendaciones actualizadas.
+            </p>
+
+            <div class="paquetes-grid">
+
+                <!-- PAQUETE CULTURA -->
+                <article class="paquete-card">
+                    <div class="paquete-header intermedio">
+                        <span class="etiqueta" data-i18n="etiqueta-cultura">Cultura</span>
+                        <h3 data-i18n="paq1-nombre">Ruta Cultural Orense</h3>
+                        <div class="precio">$95 <span data-i18n="por-persona">/ persona</span></div>
+                        <p data-i18n="paq1-duracion">2 días / 1 noche</p>
+                    </div>
+                    <div class="paquete-body">
+                        <ul>
+                            <li data-i18n="paq1-i1">Visita a Zaruma (ciudad histórica y minera)</li>
+                            <li data-i18n="paq1-i2">Recorrido por Portovelo y su museo minero</li>
+                            <li data-i18n="paq1-i3">Arquitectura colonial y plazas tradicionales</li>
+                            <li data-i18n="paq1-i4">Degustación de comida típica orense</li>
+                            <li data-i18n="paq1-i5">Hospedaje en hostería colonial</li>
+                            <li data-i18n="paq1-i6">Guía cultural local</li>
+                            <li data-i18n="paq1-i7">Transporte entre destinos</li>
+                        </ul>
+                    </div>
+                    <div class="paquete-footer">
+                        <a href="#" class="btn btn-azul" data-i18n="btn-reservar">Consultar disponibilidad</a>
+                    </div>
+                </article>
+
+                <!-- PAQUETE AVENTURA -->
+                <article class="paquete-card">
+                    <div class="paquete-header economico">
+                        <span class="badge-popular" data-i18n="mas-popular">Más popular</span>
+                        <span class="etiqueta" data-i18n="etiqueta-aventura">Aventura</span>
+                        <h3 data-i18n="paq2-nombre">Aventura Costa & Sierra</h3>
+                        <div class="precio">$130 <span data-i18n="por-persona">/ persona</span></div>
+                        <p data-i18n="paq2-duracion">2 días / 1 noche</p>
+                    </div>
+                    <div class="paquete-body">
+                        <ul>
+                            <li data-i18n="paq2-i1">Paseo en lancha por las islas de Jambelí</li>
+                            <li data-i18n="paq2-i2">Senderismo en la zona de Piñas</li>
+                            <li data-i18n="paq2-i3">Visita a miradores y cascadas cercanas</li>
+                            <li data-i18n="paq2-i4">Actividades al aire libre en Portovelo</li>
+                            <li data-i18n="paq2-i5">Hospedaje en hotel cómodo</li>
+                            <li data-i18n="paq2-i6">Almuerzos y desayuno incluidos</li>
+                            <li data-i18n="paq2-i7">Guía de aventura y equipo básico</li>
+                        </ul>
+                    </div>
+                    <div class="paquete-footer">
+                        <a href="#" class="btn btn-verde" data-i18n="btn-reservar">Consultar disponibilidad</a>
+                    </div>
+                </article>
+
+                <!-- PAQUETE NATURALEZA -->
+                <article class="paquete-card">
+                    <div class="paquete-header premium">
+                        <span class="etiqueta" data-i18n="etiqueta-naturaleza">Naturaleza</span>
+                        <h3 data-i18n="paq3-nombre">Naturaleza Pura de El Oro</h3>
+                        <div class="precio">$185 <span data-i18n="por-persona">/ persona</span></div>
+                        <p data-i18n="paq3-duracion">3 días / 2 noches</p>
+                    </div>
+                    <div class="paquete-body">
+                        <ul>
+                            <li data-i18n="paq3-i1">Bosque Petrificado de Puyango</li>
+                            <li data-i18n="paq3-i2">Observación de aves y flora nativa</li>
+                            <li data-i18n="paq3-i3">Playas y manglares de Jambelí</li>
+                            <li data-i18n="paq3-i4">Senderos ecológicos en la zona alta</li>
+                            <li data-i18n="paq3-i5">Hospedaje en hostería ecológica</li>
+                            <li data-i18n="paq3-i6">Todas las comidas incluidas</li>
+                            <li data-i18n="paq3-i7">Guía naturalista especializado</li>
+                            <li data-i18n="paq3-i8">Transporte privado</li>
+                        </ul>
+                    </div>
+                    <div class="paquete-footer">
+                        <a href="#" class="btn btn-oro" data-i18n="btn-reservar">Consultar disponibilidad</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="aviso">
+            <h3 data-i18n="nota-paquetes-titulo">Nota importante</h3>
+            <p data-i18n="nota-paquetes-texto">
+                Los precios son referenciales y pueden variar según temporada y número de personas. 
+                Antes de reservar te damos información actualizada sobre seguridad en las zonas a visitar.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="marca">Urma</div>
+        <p data-i18n="footer1">Sitio informativo sobre la Provincia de El Oro – Ecuador</p>
+        <p><a href="index.html" data-i18n="volver-inicio">Volver al inicio</a></p>
+    </footer>
+
+    <script src="idioma.js"></script>
+</body>
+</html>
